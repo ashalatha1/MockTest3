@@ -1,0 +1,13 @@
+<div class = "user-Section" *ngIf = "userList && userList.length ">
+  <h1>Add user details</h1>
+  <mat-card *ngFor = "let users of userList">
+​
+  <mat-card-content>{{users.id}}</mat-card-content>
+  <mat-card-content>{{users.first_name}}</mat-card-content>
+  <mat-card-content>{{users.last_name}}</mat-card-content>
+  <mat-card-content>{{users.email}}</mat-card-content>
+  <mat-card-content>{{users.gender}}</mat-card-content>
+  <mat-card-content>{{users.ip_address}}</mat-card-content>
+  
+  </mat-card>
+</div>
